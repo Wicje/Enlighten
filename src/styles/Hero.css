@@ -1,0 +1,44 @@
+/* src/styles/Hero.css */
+.hero {
+  background-color: var(--light-sky-blue);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 var(--spacing-md);
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.hero-title {
+  font-size: var(--font-size-xxl);
+  color: var(--dark-gray);
+  margin-bottom: var(--spacing-md);
+  animation: fadeIn 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-large);
+  color: var(--dark-gray);
+  margin-bottom: var(--spacing-xl);
+  animation: fadeIn 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 50vh;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-xl);
+  }
+}

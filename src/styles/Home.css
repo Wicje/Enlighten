@@ -1,0 +1,26 @@
+/* src/styles/Home.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section-title {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin: var(--spacing-xl) 0 var(--spacing-lg);
+  color: var(--dark-gray);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}

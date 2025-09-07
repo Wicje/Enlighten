@@ -1,0 +1,18 @@
+/* src/styles/About.css */
+.page-title {
+  font-size: var(--font-size-xxl);
+  text-align: center;
+  margin: var(--spacing-xl) 0;
+  color: var(--dark-gray);
+}
+
+.about-text {
+  font-size: var(--font-size-large);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+  padding: 0 var(--spacing-md);
+  color: var(--dark-gray);
+}
+
+/* Reuse grid from Home.css */
